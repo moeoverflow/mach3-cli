@@ -1,15 +1,18 @@
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
+import sqlalchemy
 
 engine = create_engine('sqlite:///index_mach3.db', echo=False)
 
 Base = declarative_base(engine)
 
-
-class Subtitle(Base):
-    __tablename__ = "subtitle"
-    __table_args__ = {"autoload": True}
+try:
+    class Subtitle(Base):
+        __tablename__ = "subtitle"
+        __table_args__ = {"autoload": True}
+except sqlalchemy.exc.NoSuchTableError:
+    print("No index database found. Please index this directory first: $ mach3 -i")
 
 
 def loadSession():

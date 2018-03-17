@@ -3,22 +3,20 @@ Recursively parse, index and query subtitle text.
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click', 'ass', 'sqlalchemy']
-
 setup(
     name='mach3',
-    version='0.1.0',
+    version='0.1.1.0.4',
     url='https://github.com/Calvin-Xu/mach3-cli',
-    license='BSD',
+    download_url = 'https://github.com/Calvin-Xu/mach3-cli/archive/0.1.tar.gz',
+    license='MIT',
     author='Pinlin Xu',
     author_email='calvinxu806@gmail.com',
     description='Recursively parse and index subtitle text for future use.',
     long_description=__doc__,
     packages=find_packages(exclude=['tests']),
-    include_package_data=True,
     zip_safe=False,
     platforms='any',
-    install_requires=dependencies,
+    install_requires=['click', 'ass', 'SQLAlchemy'],
     python_requires='>=3',
     entry_points={
         'console_scripts': [

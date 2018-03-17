@@ -4,11 +4,7 @@ from mach3.subtitle_parse import recursive_index
 from mach3.db_index import add_entries
 import sqlalchemy
 from textwrap import dedent
-try:
-    from mach3.db_query import index_search
-except sqlalchemy.exc.NoSuchTableError:
-    print("No index database found. Please index this directory first.")
-    exit(0)
+from mach3.db_query import index_search
 from mach3.mkv_interface import mkv_play
 
 
@@ -32,7 +28,11 @@ def main(index, search, help, dir_query):
         click.echo("Indexing complete")
     elif search:
         click.echo("Searching {} from index".format(dir_query))
-        options = index_search(dir_query)
+        try:
+            options = index_search(dir_query)
+        except NameError:
+            click.echo("No index database found. Please index this directory first: $ mach3 -i")
+            exit(0)
         if len(options) == 0:
             click.echo("I cannot find anything for you, Misaka tries and fails.")
             exit(0)
