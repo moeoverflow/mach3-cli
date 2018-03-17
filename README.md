@@ -5,8 +5,13 @@ Recursively parse and index subtitle text for future use.
 
 ### Installation
 
-    $ pip3 install mach3_cli
+(From PyPI:) Just run:
 
+    $ pip3 install mach3_cli
+    
+Or clone the project and run:
+
+    $ pip3 install .
 
 ### Usage
 
