@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='mach3',
-    version='0.1.1.0.4',
+    version='0.2.2',
     url='https://github.com/Calvin-Xu/mach3-cli',
     download_url = 'https://github.com/Calvin-Xu/mach3-cli/archive/0.1.tar.gz',
     license='MIT',

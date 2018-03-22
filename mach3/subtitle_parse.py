@@ -24,6 +24,7 @@ def regex_process(text):
 
 def get_dialogues(file_name):
     with open(file_name, "r") as rawFile:
+        print(file_name)
         doc = ass.parse(rawFile)
         dialogues = []
         for event in doc.events:
