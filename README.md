@@ -7,8 +7,6 @@ A fun project for anime fans.
 
 ### Installation
 
-(From PyPI:) Just run:
-
     $ pip3 install mach3_cli
     
 Or clone the project and run:
