@@ -35,7 +35,7 @@ When searching: the search query
     
 ### What it does:
 
-Even want to find a specific anime quote? Mach3 indexes your subtitle files, makes individual lines searchable & can even open the video at that line!
+Even wanted to find a specific anime quote? Mach3 indexes your subtitle files, makes individual lines searchable & can even open the video at that line!
 
 * Recursively finds all .ass files in the directory given.
 * Parses the .ass files, regex-process the text
