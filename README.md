@@ -4,7 +4,7 @@ Recursively parse and index subtitle text for future use.
 
 A fun project for anime fans.
 
-[PyPI: mach 3](https://pypi.org/project/mach3/)
+[PyPI: mach3](https://pypi.org/project/mach3/)
 
 
 ### Installation
