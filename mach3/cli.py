@@ -22,9 +22,17 @@ def main(index, search, help, dir_query):
         except FileNotFoundError:
             click.echo("Error: No such file or directory: {}".format(dir_query))
             exit(0)
+        except Exception:
+            click.echo("Failed!")
+            exit(0)
         click.echo("Parsing complete")
         click.echo("Indexing lines at: {}".format(dir_query))
-        add_entries(parse_result, dir_query)
+        try:
+            add_entries(parse_result, dir_query)
+        except Exception:
+            os.remove("index_mach3.db")
+            click.echo("Failed!")
+            exit(0)
         click.echo("Indexing complete")
     elif search:
         click.echo("Searching {} from index".format(dir_query))
@@ -75,6 +83,7 @@ def main(index, search, help, dir_query):
         
         Created with ♥ by Calvin Xu. Mar 2018
         For anime fans & more
+        0.3.1
         
         For help:
         $ mach3 -h

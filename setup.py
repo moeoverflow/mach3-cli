@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='mach3',
-    version='0.2.2',
+    version='0.3.1',
     url='https://github.com/Calvin-Xu/mach3-cli',
     download_url = 'https://github.com/Calvin-Xu/mach3-cli/archive/0.1.tar.gz',
     license='MIT',
@@ -16,7 +16,7 @@ setup(
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
     platforms='any',
-    install_requires=['click', 'ass', 'SQLAlchemy'],
+    install_requires=['click', 'SQLAlchemy'],
     python_requires='>=3',
     entry_points={
         'console_scripts': [
