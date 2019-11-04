@@ -35,20 +35,20 @@ When searching: the search query
     
 ### What it does:
 
-Even wanted to find a specific anime quote? Mach3 indexes your subtitle files, makes individual lines searchable & can even open the video at that line!
+Ever wanted to find a specific anime quote? Mach3 indexes your subtitle files, makes individual lines searchable & can even open the video at that line!
 
 * Recursively finds all .ass files in the directory given.
 * Parses the .ass files, regex-process the text
 * Stores the text in a SQLite database
     * Silently converts encoding to UTF-8 without changing the original subtitle files
 * (When searching) Queries from the SQLite database
-* Opens mpv player at the line you specify
+* Opens the mpv player at the line you specify
 
-### Open-source code used:
+### Open-source libraries used:
 
 * SQLAlchemy
 
-* * <http://sqlalchemy.org>
+  * <http://sqlalchemy.org>
 
 * python-ass: A library for parsing and manipulating Advanced SubStation Alpha subtitle files.
 
