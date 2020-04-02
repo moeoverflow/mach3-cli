@@ -16,7 +16,7 @@ setup(
     packages=find_packages(exclude=['tests']),
     zip_safe=False,
     platforms='any',
-    install_requires=['click', 'SQLAlchemy'],
+    install_requires=['click', 'SQLAlchemy', 'ass', 'chardet'],
     python_requires='>=3',
     entry_points={
         'console_scripts': [
