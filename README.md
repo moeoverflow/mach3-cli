@@ -52,4 +52,4 @@ Ever wanted to find a specific anime quote? Mach3 indexes your subtitle files, m
 
 * python-ass: A library for parsing and manipulating Advanced SubStation Alpha subtitle files.
 
-  * https://github.com/rfw/python-ass
+  * https://github.com/chireiden/python-ass
