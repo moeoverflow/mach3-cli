@@ -6,8 +6,6 @@ A fun project for anime fans.
 
 [PyPI: mach3](https://pypi.org/project/mach3/)
 
-![usage](https://raw.githubusercontent.com/Calvin-Xu/mach3-cli/master/usage.gif)
-
 
 ### Installation
 
